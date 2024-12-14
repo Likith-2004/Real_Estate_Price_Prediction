@@ -1,0 +1,4 @@
+{
+    "cities": ["Mumbai", "Pune", "Delhi"],
+    "property_types": ["Apartment", "Villa", "Row House"]
+}
