@@ -1,5 +1,7 @@
 # **Mumbai Real Estate Price Predictor**
 
+![Screenshot 2024-12-14 073935](https://github.com/user-attachments/assets/f1391984-fe34-4545-811d-50da5a5f5435)
+
 ## **Table of Contents**
 1. [Project Overview](#project-overview)
 2. [Key Features](#key-features)
@@ -40,42 +42,61 @@ The **Mumbai Real Estate Price Predictor** is a web application that predicts re
    ```bash
    git clone https://github.com/your-repository/mumbai-real-estate-predictor.git
    cd mumbai-real-estate-predictor
-Install required dependencies:
+2.  **Install required dependencies**:
+    
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-bash
-Copy code
-pip install -r requirements.txt
-Ensure that you have a trained model:
+3.  **Ensure that you have a trained model**: If you haven't trained the model yet, follow the `model_training.py` script to train and save the model, encoder, and scaler.
 
-If you haven't trained the model yet, follow the model_training.py script to train and save the model, encoder, and scaler.
-Usage
-Start the Flask server:
+---
 
-bash
-Copy code
-python app.py
-Open the app: Go to http://127.0.0.1:5000 in your browser.
+## **Usage**
 
-Submit the form: Fill out the form with details like total floors, city, property age, and type. Click Predict Price to see the predicted price.
+1.  **Start the Flask server**:
+    
+    ```bash
+    python app.py
+    ```
 
-Workflow
-Data Collection: A dataset containing features like the number of floors, city, age of the property, property type, and price.
-Model Training: Train a model using RandomForestRegressor, and save the encoder and scaler.
-Prediction:
-User submits property details.
-The backend processes the data using the encoder and scaler, and the model predicts the price.
-The result is displayed on the same page.
-Model Training
-Train the model: Use the provided dataset and the model_training.py script to train the machine learning model. This will generate the following files:
+2.  **Open the app**: Go to `http://127.0.0.1:5000` in your browser.
+    
+3.  **Submit the form**: Fill out the form with details like total floors, city, property age, and type. Click **Predict Price** to see the predicted price.
 
-price_predictor.joblib: Trained model
-encoder.joblib: Encoder for categorical data
-scaler.joblib: Scaler for numerical data
-Save and load model:
+---
 
-The model, encoder, and scaler are saved and loaded using joblib.
-Contributing
+## **Workflow**
+
+1.  **Data Collection**: A dataset containing features like the number of floors, city, age of the property, property type, and price.
+2.  **Model Training**: Train a model using `RandomForestRegressor`, and save the encoder and scaler.
+3.  **Prediction**:
+    *   User submits property details.
+    *   The backend processes the data using the encoder and scaler, and the model predicts the price.
+    *   The result is displayed on the same page.
+
+---
+
+## **Model Training**
+
+1.  **Train the model**: Use the provided dataset and the `model_training.py` script to train the machine learning model. This will generate the following files:
+    
+    *   `price_predictor.joblib`: Trained model
+    *   `encoder.joblib`: Encoder for categorical data
+    *   `scaler.joblib`: Scaler for numerical data
+2.  **Save and load model**:
+    
+    *   The model, encoder, and scaler are saved and loaded using `joblib`.
+
+---
+
+## **Contributing**
+
 Contributions are welcome! If you'd like to contribute, please fork the repository, make changes, and create a pull request.
 
-License
+---
+
+## **License**
+
 This project is licensed under the MIT License - see the LICENSE file for details.
+e for details.
