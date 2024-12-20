@@ -40,7 +40,7 @@ The **Mumbai Real Estate Price Predictor** is a web application that predicts re
 ## **Installation Guide**
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/your-repository/mumbai-real-estate-predictor.git
+   git clone https://github.com/Likith-2004/mumbai-real-estate-predictor.git
    cd mumbai-real-estate-predictor
 2.  **Install required dependencies**:
     
